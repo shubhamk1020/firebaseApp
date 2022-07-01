@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 ClearAll();
                 for(DataSnapshot snapshot : dataSnapshot.getChildren()){
+
                     Messages messages = new Messages();
                     messages.setImageUrl(snapshot.child("image").getValue().toString());
                     messages.setName(snapshot.child("name").getValue().toString());
@@ -81,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         if(messagesList != null){
             messagesList.clear();
 
-            if(recyclerView != null){
+            if(recyclerAdapter != null){
                 recyclerAdapter.notifyDataSetChanged();
             }
 

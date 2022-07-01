@@ -14,7 +14,7 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-public class RecyclerAdapter  extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
+public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
 
     private static final String Tag = "RecyclerView";
     private Context mContext;
